@@ -1,1 +1,86 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+.ChessKing
+{
+position: absolute;
+top: 30px;
+left: 700px;
+width : 468px;
+height: 60px;
+}
+
+.ChessQueen
+{
+position: absolute;
+top: 32px;
+left: 1322px;
+width : 468px;
+height: 60px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+<title>Chess Website</title>
+</head>
+<body bgcolor=" black">
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+<img src="drawing-chessking.png" alt="King" align="left" style="width:60px;height:110px;"  class="ChessKing">
+<h1>Our Chess Website</h1>
+<img src="drawing-chessqueen.png" alt="Queen" align="left" style="width:70px;height:102px;" class="ChessQueen">
+<p>My test paragraph.</p>
+
+</body>
+</html>
